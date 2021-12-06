@@ -10,7 +10,7 @@ solutionOne :: [(Int, Int)] -> Int
 solutionOne s = mySum $ foldr ($) s $ replicate 80 simulateDay 
 
 solutionTwo :: [(Int, Int)] -> Int
-solutionTwo s = mySum $ foldr ($) s $ replicate 10000 simulateDay 
+solutionTwo s = mySum $ foldr ($) s $ replicate 256 simulateDay 
 
 count :: [[Int]] -> [(Int, Int)]
 count l = fmap (\x -> (length x, head x)) l
